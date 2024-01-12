@@ -86,6 +86,8 @@ class AnimatedSnackBar {
     BorderRadius? borderRadius,
     DesktopSnackBarPosition desktopSnackBarPosition =
         DesktopSnackBarPosition.bottomLeft,
+    TextStyle messageTextStyle = const TextStyle(),
+    TextStyle titleTextStyle = const TextStyle(),
     MobileSnackBarPosition mobileSnackBarPosition = MobileSnackBarPosition.top,
     Duration duration = const Duration(seconds: 8),
     MultipleSnackBarStrategy snackBarStrategy = const ColumnSnackBarStrategy(),
@@ -99,6 +101,8 @@ class AnimatedSnackBar {
         type: type,
         borderRadius: borderRadius,
         messageText: messageText,
+        titleTextStyle: titleTextStyle,
+        messageTextStyle: messageTextStyle,
       );
     });
 
